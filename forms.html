@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>
+            registration form
+        </title>
+    </head>
+    <body>
+        <h1>Basic details registration form</h1>
+        <form action="save.php" method="post" name="reg">
+            <table>
+                <tr>
+                    <td>Student name:</td>
+                    <td><input type="text" name="sname" placeholder="write your name"></td>
+                </tr>
+                <tr>
+                    <td>Registration no:</td>
+                    <td><input type="text" name="reg" placeholder="enter your roll no"></td>
+                </tr>
+                <tr>
+                    <td> Gender</td>
+                    <td><input type="radio"  name="gender" value="M">male</td>
+                    <td><input type="radio" name="gender" value="F">female</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" placeholder="enter your age"></td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td><select name="branch" id="branch">
+                        <option value="-1">select</option>
+                        <option value="AI&DS">AI&DS</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>College</td>
+                    <td><input type="text" name="college" aria-placeholder="enter your college name"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="address" cols="10" rows="5" placeholder="Dr.no<br>area<br>city"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="information" value="true"></td>
+                    <td>I declare all the information I mentioned is true</td>
+                </tr>
+                <tr>
+                    <td>SUBMIT</td>
+                    <td align="center"><input type="button" name="submit">submit</td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
