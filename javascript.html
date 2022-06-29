@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> node js demo</title>
+	<script type="text/javascript">
+		function show_alert(){
+			alert("Hello!");
+		}
+		function disp_confirm(){
+			var r = confirm("press a key");
+			if(r == true){
+				document.write("you are entered");
+			}
+			else{
+				document.write("you are exit");
+			}
+		
+		}
+		function showPrompt(){
+			name = prompt("enter your name:");
+			if(name ==""){
+				alert("enter your name");
+			}
+			else{
+				confirm("your name is :"+name);
+			}
+		}
+		function show_increment(){
+			var x = prompt("enter a number");
+			++x;
+			alert("the increment value is :"+ x);
+		}
+	</script>
+</head>
+<body>
+	<h1>alert demo</h1>
+	<input type = "button" name = "click here" onClick = "show_alert()" value = "click here">
+	<h1>confirm</h1>
+	<input type = "button" name = "click here" onClick = "disp_confirm()" value = "confirm">
+	<h1>showPrompt</h1>
+	<input type = "button" name = "click here" onClick = "showPrompt()" value = "Enter name">
+	<h1>Variable</h1>
+	<input type = "button" name = "click here" onClick = "show_increment()" value = "increment">
+	
+</body>
+</html>
